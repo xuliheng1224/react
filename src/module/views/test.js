@@ -25,10 +25,8 @@ const addTodoWithDispatch = (text) => {
 }
 //需要渲染什么数据
 const mapStateToProps = (state, ownProps) => {
-  console.log(ownProps);
-
   return {
-    tiger: state
+    tiger: state.test
   }
 }
 //需要触发什么行为

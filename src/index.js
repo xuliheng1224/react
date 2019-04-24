@@ -16,7 +16,11 @@ import Container from './router/router';
 // 给增强后的store传入reducer
 const store = finalCreateStore(reducer)
 
-ReactDOM.render(<div className="app-wrapper"><Provider store={store}><Container /></Provider></div>, document.getElementById('root'));
+ReactDOM.render(<div className="app-wrapper">
+  <Provider store={store}>
+    <Container />
+  </Provider>
+</div>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
