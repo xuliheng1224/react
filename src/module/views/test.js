@@ -16,8 +16,15 @@ class App extends Component {
     );
   }
 }
+
+const addTodoWithDispatch = (text) => {
+  return {
+    type: '涨工资',
+    text
+  }
+}
 //需要渲染什么数据
-function mapStateToProps(state, ownProps) {
+const mapStateToProps = (state, ownProps) => {
   console.log(ownProps);
 
   return {
@@ -25,9 +32,9 @@ function mapStateToProps(state, ownProps) {
   }
 }
 //需要触发什么行为
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = (dispatch) => {
   return {
-    PayIncrease: () => dispatch({ type: '涨工资' }),
+    PayIncrease: () => dispatch(addTodoWithDispatch(10000)),
     PayDecrease: () => dispatch({ type: '扣工资' })
   }
 }
