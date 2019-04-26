@@ -1,4 +1,4 @@
-const todos = (state = 3, action) => {
+const todo = (state = 3, action) => {
   switch (action.type) {
     case 'ADD_TODO':
       return [
@@ -14,4 +14,4 @@ const todos = (state = 3, action) => {
   }
 }
 
-export default todos
+export default todo

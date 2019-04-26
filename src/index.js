@@ -6,7 +6,6 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import finalCreateStore from './store/configureStore'  //引入store配置
 import reducer from './reducers'  // 引入reducers集合
-import 'antd-mobile/dist/antd-mobile.css';//全局引入antd-mobile.css样式
 
 import Container from './router/router';
 

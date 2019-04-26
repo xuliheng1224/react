@@ -25,6 +25,8 @@ const addTodoWithDispatch = (text) => {
 }
 //需要渲染什么数据
 const mapStateToProps = (state, ownProps) => {
+  console.log(state);
+
   return {
     tiger: state.test
   }
