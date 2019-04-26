@@ -9,7 +9,7 @@ import reducer from './reducers'  // 引入reducers集合
 
 import Container from './router/router';
 
-
+import "antd/dist/antd.css";
 //创建store
 // const store = createStore(reducer);
 // 给增强后的store传入reducer
