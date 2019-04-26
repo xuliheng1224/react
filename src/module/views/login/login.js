@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 
+import "./login.less";
 class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
@@ -63,4 +64,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default Login = connect(mapStateToProps, mapDispatchToProps)(Login)
+export default Form.create()(connect(mapStateToProps, mapDispatchToProps)(Login))
